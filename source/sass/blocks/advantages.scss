@@ -1,0 +1,24 @@
+.advantages__main-title {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.advantages__main-text {
+  font-size: 14px;
+}
+
+
+.advantages__item {
+  text-align: center;
+  background-color: $addition-color;
+
+  &--blue {
+    color: $white;
+    background-color: $main-color;
+  }
+}
+
+.advantages__number {
+  font-size: 14px;
+  line-height: 21px;
+}
