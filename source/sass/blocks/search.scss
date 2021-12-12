@@ -1,0 +1,26 @@
+.search {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.search__title {
+  font-size: 21px;
+}
+
+.search__text {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.search__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 21px;
+  font-weight: 700;
+  width: 280px;
+  height: 58px;
+  background-color: $main-color;
+  color: $white;
+}
