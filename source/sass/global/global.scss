@@ -28,3 +28,19 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.button {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 21px;
+  font-weight: 700;
+  width: 280px;
+  height: 58px;
+  text-transform: uppercase;
+  background-color: $main-color;
+  color: $white;
+}

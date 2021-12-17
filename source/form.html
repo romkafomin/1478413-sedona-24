@@ -71,15 +71,15 @@
             <legend class="review__legend">Ваше общее впечатление:</legend>
             <ul class="review__list">
               <li class="review__item">
-                <label class="review__label" for="positive_impression">Скорее положительное</label>
+                <label class="review__label review__label--weight" for="positive_impression">Скорее положительное</label>
                 <input class="review__input" type="radio" name="your_impression" id="positive_impression" value="positive" checked>
               </li>
               <li class="review__item">
-                <label class="review__label" for="negative_impression">Скорее отрицательное</label>
+                <label class="review__label review__label--weight" for="negative_impression">Скорее отрицательное</label>
                 <input class="review__input" type="radio" name="your_impression" id="negative_impression" value="negative">
               </li>
               <li class="review__item">
-                <label class="review__label" for="dont_know_impression">Затрудняюсь ответить</label>
+                <label class="review__label review__label--weight" for="dont_know_impression">Затрудняюсь ответить</label>
                 <input class="review__input" type="radio" name="your_impression" id="dont_know_impression" value="dont_know">
               </li>
             </ul>
@@ -88,28 +88,28 @@
             <legend class="review__legend">Посещённые достопримечательности:</legend>
             <ul class="review__list">
               <li class="review__item">
-                <label class="review__label" for="devils_bridge">Мост Дьявола</label>
+                <label class="review__label review__label--weight" for="devils_bridge">Мост Дьявола</label>
                 <input class="review__input" type="checkbox" name="devils_bridge" id="devils_bridge" checked>
               </li>
               <li class="review__item">
-                <label class="review__label" for="bell_mountain">Гора-Колокол</label>
+                <label class="review__label review__label--weight" for="bell_mountain">Гора-Колокол</label>
                 <input class="review__input" type="checkbox" name="bell_mountain" id="bell_mountain" checked>
               </li>
               <li class="review__item">
-                <label class="review__label" for="slide_park">Слайд-парк</label>
+                <label class="review__label review__label--weight" for="slide_park">Слайд-парк</label>
                 <input class="review__input" type="checkbox" name="slide_park" id="slide_park" checked>
               </li>
               <li class="review__item">
-                <label class="review__label" for="red_rocks" >Красные скалы</label>
+                <label class="review__label review__label--weight" for="red_rocks" >Красные скалы</label>
                 <input class="review__input" type="checkbox" name="red_rocks" id="red_rocks">
               </li>
             </ul>
           </fieldset>
           <fieldset class="review__fieldset review__fieldset--emotions">
-            <legend class="review__label">Опишите свои эмоции:</legend>
+            <legend class="review__label review__label--textarea">Опишите свои эмоции:</legend>
             <textarea class="review__textarea" name="your_message" id="your_message" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
-          <button class="review__button" type="submit">Отправить отзыв</button>
+          <button class="review__button button" type="submit">Отправить отзыв</button>
         </form>
       </section>
     </main>

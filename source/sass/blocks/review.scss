@@ -15,9 +15,35 @@
 .review__label {
   font-size: 14px;
   color: $font-color;
+
+  &--weight {
+    font-size: 18px;
+    text-transform: none;
+    font-weight: 700;
+    color: $black;
+  }
+
+  &--textarea {
+    font-weight: 700;
+    color: $black;
+    font-size: 18px;
+  }
 }
 
 .review__input {
-  text-transform: none;
-  font-weight: 700;
+  &::placeholder {
+    text-transform: none;
+    font-weight: 700;
+    color: $black;
+  }
+}
+
+.review__textarea {
+  background-color: $form-color;
+
+  &::placeholder {
+    text-transform: none;
+    font-weight: 700;
+    color: $black;
+  }
 }
