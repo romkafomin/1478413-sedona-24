@@ -1,9 +1,17 @@
 .site-list {
   text-align: center;
   background-color: $main-color;
+
+  @media ($tablet) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .site-list__item {
+  padding-top: 10px;
+  padding-bottom: 5px;
   border-bottom: 1px solid $site-list-bottom-shadow;
   border-top: 1px solid $site-list-top-shadow;
 

@@ -1,0 +1,73 @@
+.review {
+  padding-top: 36px;
+  padding-bottom: 48px;
+}
+
+.review__title {
+  text-align: center;
+  font-size: 18px;
+}
+
+.review__text {
+  margin-top: 35px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 24px;
+  color: $font-color;
+  border-bottom: 1px solid $border-color;
+}
+
+.review__fieldset {
+  margin-top: 20px;
+  border-bottom: 1px solid $border-color;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.review__legend {
+  text-align: center;
+  font-weight: 700;
+}
+
+.review__label {
+  font-size: 14px;
+  color: $font-color;
+
+  &--weight {
+    font-size: 18px;
+    text-transform: none;
+    font-weight: 700;
+    color: $black;
+  }
+
+  &--textarea {
+    font-weight: 700;
+    color: $black;
+    font-size: 18px;
+  }
+}
+
+.review__input {
+  border: none;
+  padding: 0;
+
+  &::placeholder {
+    padding: 18px 0 14px 22px;
+    text-transform: none;
+    font-weight: 700;
+    color: $black;
+    background-color: $form-color;
+  }
+}
+
+.review__textarea {
+  background-color: $form-color;
+
+  &::placeholder {
+    text-transform: none;
+    font-weight: 700;
+    color: $black;
+  }
+}

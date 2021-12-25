@@ -1,5 +1,13 @@
 .footer {
+  padding-top: 39px;
+  padding-bottom: 26px;
   text-align: center;
+
+  @media ($tablet) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .footer__title {
