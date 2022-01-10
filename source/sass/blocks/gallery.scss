@@ -22,6 +22,9 @@
   align-items: center;
 
   @media ($tablet) {
+    padding: 0 60px;
+    flex-direction: row;
+    justify-content: flex-start;
     align-items: flex-start;
     flex-wrap: wrap;
   }
@@ -44,6 +47,7 @@
   }
 
   @media ($tablet) {
+    align-items: flex-start;
     width: 324px;
     background: $form-color;
     padding: 0;
