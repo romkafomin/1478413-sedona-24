@@ -49,7 +49,7 @@
     padding-top: 34px;
 
     @media ($tablet) {
-      padding-top: 0;;
+      padding-top: 0;
     }
   }
 
@@ -61,10 +61,6 @@
       display: flex;
       justify-content: center;
       align-items: center;
-    }
-
-    @media ($desktop) {
-      padding: 52px 78px;
     }
   }
 }
