@@ -33,8 +33,8 @@
   }
 
   &--additional {
-    padding-top: 25px;
-    padding-bottom: 24px;
+    padding: 25px 20px 24px;
+    border-bottom: 1px solid $border-color;
 
     @media ($tablet) {
       width: 256px;
@@ -109,6 +109,8 @@
 }
 
 .advantages__img {
+  display: block;
+
   @media ($tablet) {
     width: 512px;
   }
