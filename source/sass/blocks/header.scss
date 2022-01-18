@@ -16,7 +16,7 @@
   justify-content: flex-end;
   align-items: flex-end;
   position: relative;
-  background: url(../img/intro.jpg) no-repeat;
+  background: url("../img/intro.jpg") no-repeat;
   background-size: cover;
 
   &::after {
@@ -26,7 +26,7 @@
     width: 1200px;
     height: 57px;
     transform: translateX(38%);
-    background: url('../img/intro-triangle.svg');
+    background: url("../img/intro-triangle.svg");
 
     @media ($tablet) {
       transform: translateX(18%);
@@ -40,12 +40,12 @@
   @media ($tablet) {
     width: 768px;
     height: 518px;
-    background: url(../img/Intro-tablet.jpg) no-repeat;
+    background: url("../img/Intro-tablet.jpg") no-repeat;
   }
 
   @media ($desktop) {
     width: 1200px;
-    background: url(../img/Intro-desktop.jpg) no-repeat;
+    background: url("../img/Intro-desktop.jpg") no-repeat;
   }
 }
 
