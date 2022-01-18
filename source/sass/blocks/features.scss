@@ -3,30 +3,104 @@
   padding: 24px 0;
 
   @media ($tablet) {
+    padding: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
   }
 }
 
 .features__item {
+  display: flex;
   padding-bottom: 26px;
-  padding-left: 70px;
+  padding-left: 20px;
   text-align: left;
   color: $black;
   background-color: $white;
 
+  @media ($tablet) {
+    display: block;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 58px;
+    width: 33%;
+  }
+
   &:last-child {
     padding-bottom: 0;
+  }
+
+  &::before {
+    margin-right: 20px;
+
+    @media ($tablet) {
+      margin-right: 0;
+    }
+  }
+
+  &--housing {
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 69px;
+      height: 37px;
+      background: url("../img/icon-house.svg") no-repeat;
+
+      @media ($tablet) {
+        width: 75px;
+        height: 72px;
+        background: url("../img/icon-house-tablet.svg");
+      }
+    }
+  }
+
+  &--souvenirs {
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 72px;
+      height: 38px;
+      background: url("../img/icon-gift.svg") no-repeat;
+
+      @media ($tablet) {
+        width: 64px;
+        height: 75px;
+        background: url("../img/icon-gift-tablet.svg");
+      }
+    }
+  }
+
+  &--food {
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 70px;
+      height: 35px;
+      background: url("../img/icon-burger.svg") no-repeat;
+
+      @media ($tablet) {
+        width: 76px;
+        height: 68px;
+        background: url("../img/icon-burger-tablet.svg");
+      }
+    }
   }
 }
 
 .features__title {
   font-weight: 700;
+
+  @media ($tablet) {
+    text-align: center;
+  }
 }
 
 .features__text {
   margin-top: 22px;
   font-size: 14px;
   line-height: 21px;
+
+  @media ($tablet) {
+    text-align: center;
+  }
 }

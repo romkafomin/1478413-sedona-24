@@ -1,7 +1,12 @@
 .socials {
+  margin-top: 33px;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media ($tablet) {
+    margin: 0;
+  }
 }
 
 .socials__link {

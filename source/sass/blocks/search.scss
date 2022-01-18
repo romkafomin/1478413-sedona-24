@@ -8,6 +8,10 @@
 
 .search__title {
   font-size: 21px;
+
+  @media ($tablet) {
+    font-size: 30px;
+  }
 }
 
 .search__text {
@@ -18,4 +22,8 @@
 
 .search__link {
   margin: 27px auto 0;
+
+  @media ($tablet) {
+    width: 458px;
+  }
 }
