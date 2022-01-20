@@ -12,6 +12,8 @@
 }
 
 .advantages__title-wrapper {
+  overflow-x: hidden;
+  overflow-y: hidden;
   position: relative;
   padding: 0 20px;
   display: flex;
@@ -60,7 +62,11 @@
     border-bottom: 1px solid $border-color;
 
     @media ($tablet) {
-      width: 33%;
+      width: 256px;
+    }
+
+    @media ($desktop) {
+      width: 400px;
     }
   }
 
@@ -100,6 +106,10 @@
 
   @media ($tablet) {
     width: 256px;
+  }
+
+  @media ($desktop) {
+    width: 400px;
   }
 }
 
@@ -151,6 +161,16 @@
     padding-bottom: 35px;
   }
 
+  &--additional {
+    @media ($tablet) {
+      width: 180px;
+    }
+
+    @media ($desktop) {
+      width: 300px;
+    }
+  }
+
   @media ($tablet) {
     margin: 0;
     padding: 0;
@@ -162,6 +182,11 @@
 
   @media ($tablet) {
     width: 512px;
+    height: 256px;
+  }
+
+  @media ($desktop) {
+    width: 800px;
     height: 256px;
   }
 }

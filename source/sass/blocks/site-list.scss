@@ -4,6 +4,7 @@
   background-color: $main-color;
 
   @media ($tablet) {
+    background-color: $white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,6 +20,20 @@
   &:first-child {
     border-top: none;
   }
+
+  @media ($tablet) {
+    width: 153px;
+    padding: 0;
+    border: none;
+
+    &:nth-child(2) {
+      margin-right: 167px;
+
+      @media ($desktop) {
+        margin-right: 244px;
+      }
+    }
+  }
 }
 
 .site-list__link {
@@ -26,4 +41,11 @@
   font-weight: 700;
   text-decoration: none;
   color: $white;
+
+  @media ($tablet) {
+    padding: 16px 0 14px;
+    font-size: 14px;
+    line-height: 26px;
+    color: $black;
+  }
 }

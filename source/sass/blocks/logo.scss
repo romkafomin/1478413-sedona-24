@@ -1,0 +1,26 @@
+.logo {
+  width: 102px;
+  height: 56px;
+  position: relative;
+
+  @media ($tablet) {
+    height: 0;
+  }
+
+  &::after {
+    z-index: 1;
+    content: "";
+    position: absolute;
+    width: 102px;
+    height: 84px;
+    left: 0;
+    right: 0;
+    background: url("../img/logo-mobile.svg") no-repeat;
+
+    @media ($desktop) {
+      width: 187px;
+      height: 96px;
+      background: url("../img/logotype-desktop.svg");
+    }
+  }
+}

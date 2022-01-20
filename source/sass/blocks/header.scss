@@ -7,6 +7,7 @@
 }
 
 .header__intro {
+  margin: 0 auto;
   width: 320px;
   height: 398px;
   overflow-x: hidden;
@@ -25,11 +26,14 @@
     position: absolute;
     width: 1200px;
     height: 57px;
-    transform: translateX(38%);
+    transform: translateX(-37%);
+    bottom: 0;
+    right: 0;
+    left: 0;
     background: url("../img/intro-triangle.svg");
 
     @media ($tablet) {
-      transform: translateX(18%);
+      transform: translateX(-18%);
     }
 
     @media ($desktop) {
