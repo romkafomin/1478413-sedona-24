@@ -5,3 +5,54 @@
 .header__toggle {
   display: none;
 }
+
+.header__intro {
+  margin: 0 auto;
+  width: 320px;
+  height: 398px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  position: relative;
+  background: url("../img/intro.jpg") no-repeat;
+  background-size: cover;
+
+  &::after {
+    margin: 0 auto;
+    content: "";
+    position: absolute;
+    width: 1200px;
+    height: 57px;
+    transform: translateX(-37%);
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: url("../img/intro-triangle.svg");
+
+    @media ($tablet) {
+      transform: translateX(-18%);
+    }
+
+    @media ($desktop) {
+      transform: translateX(0);
+    }
+  }
+
+  @media ($tablet) {
+    width: 768px;
+    height: 518px;
+    background: url("../img/Intro-tablet.jpg") no-repeat;
+  }
+
+  @media ($desktop) {
+    width: 1200px;
+    background: url("../img/Intro-desktop.jpg") no-repeat;
+  }
+}
+
+.header__img {
+  margin: 0 auto;
+}

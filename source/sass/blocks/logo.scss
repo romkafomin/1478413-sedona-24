@@ -1,0 +1,17 @@
+.logo {
+  height: 56px;
+  display: block;
+  position: relative;
+  right: 0;
+  left: -46px;
+
+  @media ($tablet) {
+    height: 0;
+  }
+}
+
+.logo__img {
+  z-index: 1;
+  content: "";
+  position: absolute;
+}

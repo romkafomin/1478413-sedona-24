@@ -1,11 +1,12 @@
 .footer {
   padding-top: 39px;
-  padding-bottom: 26px;
+  padding-bottom: 25px;
   text-align: center;
 
   @media ($tablet) {
+    padding: 36px 45px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
   }
 }
@@ -14,6 +15,23 @@
   font-size: 21px;
 }
 
+
+.footer__box {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
 .footer__text {
+  margin-top: 45px;
+  padding-bottom: 10px;
   font-size: 14px;
+
+  @media ($tablet) {
+    margin: 0;
+  }
+}
+
+.footer__link {
+  margin-left: 10px;
 }
