@@ -7,6 +7,10 @@
 .gallery__title {
   font-size: 18px;
   font-weight: 700;
+
+  @media ($tablet) {
+    font-size: 30px;
+  }
 }
 
 .gallery__text {
@@ -28,13 +32,17 @@
     align-items: flex-start;
     flex-wrap: wrap;
   }
+
+  @media ($desktop) {
+    padding: 0;
+  }
 }
 
 .gallery__item {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   padding: 22px 20px 21px;
   font-size: 14px;
   line-height: 24px;
@@ -52,6 +60,10 @@
     background: $form-color;
     padding: 0;
   }
+
+  @media ($desktop) {
+    width: 400px;
+  }
 }
 
 .gallery__post {
@@ -63,5 +75,16 @@
 }
 
 .gallery__likes {
+  position: relative;
+  margin-left: 30px;
   font-weight: 700;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 23px;
+    height: 21px;
+    left: -30px;
+    background: url("../img/like-icon.svg") no-repeat;
+  }
 }

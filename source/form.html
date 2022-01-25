@@ -16,22 +16,20 @@
       <nav class="header__nav">
         <ul class="header__list site-list">
           <li class="site-list__item">
-            <a class="site-list__link" href="index.html">Главная</a>
+            <a class="site-list__link" href="#">Главная</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="catalog.html">Фото и видео</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="#">Форма отзыва</a>
+            <a class="site-list__link" href="form.html">Форма отзыва</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="#">Html academy</a>
           </li>
         </ul>
       </nav>
-      <div class="header__intro">
-        <img src="img/intro.jpg" width="320" height="389" alt="Седона">
-      </div>
+      <div class="header__intro"></div>
     </header>
     <main class="main-form">
       <section class="review">
@@ -59,16 +57,16 @@
               </fieldset>
             </li>
             <li class="review__main-item review__main-item--contacts">
-              <fieldset class="review__fieldset">
+              <fieldset class="review__fieldset review__fieldset--contacts">
                 <legend class="review__legend">Контактная информация:</legend>
                 <ul class="review__list">
-                  <li class="review__item review__item--contacts">
+                  <li class="review__item review__item--contacts review__item--tel">
                     <label class="review__label review__label--contacts" for="your_phone">Контактный телефон*:</label>
-                    <input class="review__input" type="tel" name="your_phone" id="your_phone" placeholder="Введите телефон" aria-label="Укажите ваш телефон" required>
+                    <input class="review__input review__input--contacts review__input--tel" type="tel" name="your_phone" id="your_phone" placeholder="Введите телефон" aria-label="Укажите ваш телефон" required>
                   </li>
-                  <li class="review__item review__item--contacts">
+                  <li class="review__item review__item--contacts review__item--email">
                     <label class="review__label review__label--contacts" for="your_email">Электронная почта*:</label>
-                    <input class="review__input" type="email" name="your_email" id="your_email" placeholder="Введите e-mail" aria-label="Укажите вашу электронную почту" required>
+                    <input class="review__input review__input--contacts review__input--email" type="email" name="your_email" id="your_email" placeholder="Введите e-mail" aria-label="Укажите вашу электронную почту" required>
                   </li>
                 </ul>
               </fieldset>
@@ -77,17 +75,17 @@
               <fieldset class="review__fieldset">
                 <legend class="review__legend">Ваше общее впечатление:</legend>
                 <ul class="review__list">
-                  <li class="review__item">
-                    <label class="review__label review__label--weight" for="positive_impression">Скорее положительное</label>
-                    <input class="review__input" type="radio" name="your_impression" id="positive_impression" value="positive" checked>
+                  <li class="review__item review__item--impression">
+                    <input class="review__input review__input--impression visually-hidden" type="radio" name="your_impression" id="positive_impression" value="positive" checked>
+                    <label class="review__label review__label--weight review__label--impression" for="positive_impression">Скорее положительное</label>
                   </li>
-                  <li class="review__item">
-                    <label class="review__label review__label--weight" for="negative_impression">Скорее отрицательное</label>
-                    <input class="review__input" type="radio" name="your_impression" id="negative_impression" value="negative">
+                  <li class="review__item review__item--impression">
+                    <input class="review__input review__input--impression visually-hidden" type="radio" name="your_impression" id="negative_impression" value="negative">
+                    <label class="review__label review__label--weight review__label--impression" for="negative_impression">Скорее отрицательное</label>
                   </li>
-                  <li class="review__item">
-                    <label class="review__label review__label--weight" for="dont_know_impression">Затрудняюсь ответить</label>
-                    <input class="review__input" type="radio" name="your_impression" id="dont_know_impression" value="dont_know">
+                  <li class="review__item review__item--impression">
+                    <input class="review__input review__input--impression visually-hidden" type="radio" name="your_impression" id="dont_know_impression" value="dont_know">
+                    <label class="review__label review__label--weight review__label--impression" for="dont_know_impression">Затрудняюсь ответить</label>
                   </li>
               </ul>
             </fieldset>
@@ -95,22 +93,22 @@
           <li class="review__main-item review__main-item--sight">
             <fieldset class="review__fieldset">
               <legend class="review__legend">Посещённые достопримечательности:</legend>
-              <ul class="review__list">
+              <ul class="review__list review__list--sight">
                 <li class="review__item">
-                  <label class="review__label review__label--weight" for="devils_bridge">Мост Дьявола</label>
-                  <input class="review__input" type="checkbox" name="devils_bridge" id="devils_bridge" checked>
+                  <input class="review__input review__input--sight visually-hidden" type="checkbox" name="devils_bridge" id="devils_bridge" checked>
+                  <label class="review__label review__label--weight review__label--sight" for="devils_bridge">Мост Дьявола</label>
                 </li>
                 <li class="review__item">
-                  <label class="review__label review__label--weight" for="bell_mountain">Гора-Колокол</label>
-                  <input class="review__input" type="checkbox" name="bell_mountain" id="bell_mountain" checked>
+                  <input class="review__input review__input--sight visually-hidden" type="checkbox" name="bell_mountain" id="bell_mountain" checked>
+                  <label class="review__label review__label--weight review__label--sight" for="bell_mountain">Гора-Колокол</label>
                 </li>
                 <li class="review__item">
-                  <label class="review__label review__label--weight" for="slide_park">Слайд-парк</label>
-                  <input class="review__input" type="checkbox" name="slide_park" id="slide_park" checked>
+                  <input class="review__input review__input--sight visually-hidden" type="checkbox" name="slide_park" id="slide_park" checked>
+                  <label class="review__label review__label--weight review__label--sight" for="slide_park">Слайд-парк</label>
                 </li>
                 <li class="review__item">
-                  <label class="review__label review__label--weight" for="red_rocks" >Красные скалы</label>
-                  <input class="review__input" type="checkbox" name="red_rocks" id="red_rocks">
+                  <input class="review__input review__input--sight visually-hidden" type="checkbox" name="red_rocks" id="red_rocks">
+                  <label class="review__label review__label--weight review__label--sight" for="red_rocks" >Красные скалы</label>
                 </li>
               </ul>
             </fieldset>
@@ -130,23 +128,27 @@
       <b class="footer__title">#visitsedona</b>
       <ul class="socials">
         <li class="socials__item">
-          <a class="socials__link">
+          <a class="socials__link socials__link--twitter">
             <span class="visually-hidden">Наш твиттер</span>
           </a>
         </li>
         <li class="socials__item">
-          <a class="socials__link">
+          <a class="socials__link socials__link--facebook">
             <span class="visually-hidden">Наш фейсбук</span>
           </a>
         </li>
         <li class="socials__item">
-          <a class="socials__link">
+          <a class="socials__link socials__link--youtube">
             <span class="visually-hidden">Наш ютуб канал</span>
           </a>
         </li>
       </ul>
-      <p class="footer__text">Разработано</p>
-      <a class="footer__link" href="#"></a>
+      <div class="footer__box">
+        <p class="footer__text">Разработано</p>
+        <a class="footer__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <svg width="28px" height="31px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><path fill="#000000" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>
+        </a>
+      </div>
     </footer>
   </body>
 </html>
