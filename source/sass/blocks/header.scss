@@ -21,24 +21,13 @@
   background-size: cover;
 
   &::after {
-    margin: 0 auto;
     content: "";
     position: absolute;
-    width: 1200px;
     height: 57px;
-    transform: translateX(-37%);
     bottom: 0;
     right: 0;
     left: 0;
-    background: url("../img/intro-triangle.svg");
-
-    @media ($tablet) {
-      transform: translateX(-18%);
-    }
-
-    @media ($desktop) {
-      transform: translateX(0);
-    }
+    background: url("../img/intro-triangle.svg") center center;
   }
 
   @media ($tablet) {
