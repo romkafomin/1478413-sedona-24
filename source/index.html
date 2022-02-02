@@ -4,12 +4,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicon/favicon16.png" type="image/png">
+    <link rel="icon" href="img/favicon/favicon32.png" type="image/png">
+    <link rel="icon" href="img/favicon/favicon152.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicon/favicon152.png" type="image/png">
     <title>HTML Academy: Седона</title>
   </head>
   <body class="page__body">
     <header class="header">
       <a class="header__logo logo">
-        <img class="logo__img" src="img/logo-mobile.svg" width="102" height="84" alt="Логотип">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+          <img class="logo__img" src="img/logo-mobile.svg" width="102" height="84" alt="Логотип">
+        </picture>
       </a>
       <button class="header__toggle header__toggle--open" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <button class="header__toggle header__toggle--close" type="button"><span class="visually-hidden">Закрыть меню</span></button>
@@ -25,11 +34,16 @@
             <a class="site-list__link" href="form.html">Форма отзыва</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="#">Html academy</a>
+            <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">Html academy</a>
           </li>
         </ul>
       </nav>
-      <div class="header__intro"></div>
+      <div class="header__intro">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/text-index-tablet.svg">
+          <img class="header__img" src="img/text-index.svg" alt="intro">
+        </picture>
+      </div>
     </header>
     <main class="main">
       <section class="advantages">
@@ -46,37 +60,45 @@
                 <p class="advantages__number">— №1 —</p>
                 <p class="advantages__text advantages__text--first">Седона не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
-              <img class="advantages__img" src="img/advantages1.jpg" width="320" height="260" alt="Настоящий городок - Седона">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/advantages1-desktop.jpg 1x, img/advantages1-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/advantages1-tablet.jpg 1x, img/advantages1-tablet@2x.jpg 2x">
+                <img class="advantages__img" src="img/advantages1.jpg" srcset="img/advantages1@2x.jpg 2x" width="320" height="260" alt="Настоящий городок - Седона">
+              </picture>
             </div>
             <ul class="advantages__features features">
               <li class="features__item features__item--housing">
-                <div class="feutures__box">
+                <div class="features__box">
                   <h4 class="features__title">Жилье</h4>
                   <p class="features__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                 </div>
               </li>
-              <li class="features__item features__item--food">
-                <div class="feutures__box">
-                  <h4 class="features__title">Еда</h4>
-                  <p class="features__text">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
-                </div>
-              </li>
               <li class="features__item features__item--souvenirs">
-                <div class="feutures__box">
+                <div class="features__box features__box--souvenirs">
                   <h4 class="features__title">Сувениры</h4>
                   <p class="features__text">Не только китайского, но и местного производства!</p>
+                </div>
+              </li>
+              <li class="features__item features__item--food">
+                <div class="features__box">
+                  <h4 class="features__title">Еда</h4>
+                  <p class="features__text">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
                 </div>
               </li>
             </ul>
           </li>
           <li class="advantages__item advantages__item--main advantages__item--second">
             <div class="advantages__item-wrapper">
-              <img class="advantages__img" src="img/advantages2.jpg" width="320" height="260" alt="Фото моста">
               <div class="advantages__text-wrapper">
-                <h3 class="advantages__title advantages__title--second">Там есть мост дъявола</h3>
+                <h3 class="advantages__title advantages__title--second">Там есть<br class="advantages__br"> мост дъявола</h3>
                 <p class="advantages__number">— №2 —</p>
                 <p class="advantages__text advantages__text--second">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
               </div>
+              <picture class="advantages__picture">
+                <source media="(min-width: 1200px)" srcset="img/advantages2-desktop.jpg 1x, img/advantages2-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/advantages2-tablet.jpg 1x, img/advantages2-tablet@2x.jpg 2x">
+                <img class="advantages__img" src="img/advantages2.jpg" srcset="img/advantages2@2x.jpg" width="320" height="260" alt="Фото моста">
+              </picture>
             </div>
           </li>
             <li class="advantages__item advantages__item--additional">
@@ -99,12 +121,16 @@
       <section class="search">
         <h2 class="visually-hidden">Поиск отеля</h2>
         <b class="search__title">Заинтересовались?</b>
-        <p class="search__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <p class="search__text">Укажите предполагаемые даты поездки,<br class="search__br"> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <a class="search__link button" href="#">Найти гостиницу</a>
       </section>
       <section class="map">
         <h2 class="visually-hidden">Как нас найти на карте</h2>
-        <img src="img/map-mobile.png" width="320" height="350" alt="Наше местоположение на карте">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/map-desktop.png">
+          <source media="(min-width: 768px)" srcset="img/map-tablet.png">
+          <img class="map__img" src="img/map-mobile.png" width="320" height="350" alt="Наше местоположение на карте">
+        </picture>
       </section>
     </main>
     <footer class="footer">
@@ -129,7 +155,7 @@
       <div class="footer__box">
         <p class="footer__text">Разработано</p>
         <a class="footer__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <svg width="28px" height="31px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><path fill="#000000" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>
+          <svg width="27px" height="34px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><path fill="#000000" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>
         </a>
       </div>
     </footer>

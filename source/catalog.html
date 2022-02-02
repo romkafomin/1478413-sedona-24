@@ -4,32 +4,46 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicon/favicon16.png" type="image/png">
+    <link rel="icon" href="img/favicon/favicon32.png" type="image/png">
+    <link rel="icon" href="img/favicon/favicon152.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicon/favicon152.png" type="image/png">
     <title>HTML Academy: Седона</title>
   </head>
   <body class="page__body">
     <header class="header">
       <a class="header__logo logo">
-        <img class="logo__img" src="img/logo-mobile.svg" width="102" height="84" alt="Логотип">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+          <img class="logo__img" src="img/logo-mobile.svg" width="102" height="84" alt="Логотип">
+        </picture>
       </a>
       <button class="header__toggle header__toggle--open" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <button class="header__toggle header__toggle--close" type="button"><span class="visually-hidden">Закрыть меню</span></button>
       <nav class="header__nav">
         <ul class="header__list site-list">
           <li class="site-list__item">
-            <a class="site-list__link" href="#">Главная</a>
+            <a class="site-list__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="catalog.html">Фото и видео</a>
+            <a class="site-list__link" href="#">Фото и видео</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="form.html">Форма отзыва</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="#">Html academy</a>
+            <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">Html academy</a>
           </li>
         </ul>
       </nav>
-      <div class="header__intro"></div>
+      <div class="header__intro header__second-intro">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/sedona-second-page-tablet.svg">
+          <img class="header__img" src="img/sedona-second-page.svg" alt="intro">
+        </picture>
+      </div>
     </header>
     <main class="main-catalog">
       <section class="gallery">
@@ -38,52 +52,105 @@
           <p class="gallery__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
         </div>
         <ul class="gallery__list">
-          <li class="gallery__item">
-            <img class="gallery__photo" src="img/catalog1-mobile.jpg" width="280" height="280" alt="Неродные просторы">
-            <p class="gallery__post">Неродные просторы</p>
-            <span class="gallery__author">Автор фото: Борис</span>
+          <li class="gallery__item gallery__item--main">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/catalog1-desktop.jpg 1x, img/catalog1-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/catalog1-tablet.jpg 1x, img/catalog1-tablet@2x.jpg 2x">
+              <img class="gallery__photo gallery__photo--main" src="img/catalog1-mobile.jpg" srcset="img/catalog1-mobile@2x.jpg" width="280" height="280" alt="Неродные просторы">
+            </picture>
+            <div class="gallery__wrapper">
+              <div class="gallery__box">
+                <p class="gallery__post">Неродные просторы</p>
+                <span class="gallery__author">Автор фото: Борис</span>
+              </div>
             <span class="gallery__likes">1350</span>
+            </div>
           </li>
           <li class="gallery__item">
-            <img class="gallery__photo" src="img/catalog2-mobile.jpg" width="280" height="280" alt="Местная растительность">
-            <p class="gallery__post">Местная растительность</p>
-            <span class="gallery__author">Автор фото: Сергей</span>
-            <span class="gallery__likes">143</span>
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/catalog2-desktop.jpg 1x, img/catalog2-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/catalog2-tablet.jpg 1x, img/catalog2-tablet@2x.jpg 2x">
+              <img class="gallery__photo" src="img/catalog2-mobile.jpg" srcset="img/catalog2-mobile@2x.jpg" width="280" height="280" alt="Местная растительность">
+            </picture>
+            <div class="gallery__wrapper">
+              <div class="gallery__box">
+                <p class="gallery__post">Местная растительность</p>
+                <span class="gallery__author">Автор фото: Сергей</span>
+              </div>
+              <span class="gallery__likes">143</span>
+            </div>
           </li>
           <li class="gallery__item">
-            <img class="gallery__photo" src="img/catalog3-mobile.jpg" width="280" height="280" alt="Дорога на север">
-            <p class="gallery__post">Дорога на север</p>
-            <span class="gallery__author">Автор фото: Пётр</span>
-            <span class="gallery__likes">96</span>
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/catalog3-desktop.jpg 1x, img/catalog3-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/catalog3-tablet.jpg 1x, img/catalog3-tablet@2x.jpg 2x">
+              <img class="gallery__photo" src="img/catalog3-mobile.jpg" srcset="img/catalog3-mobile@2x.jpg" width="280" height="280" alt="Дорога на север">
+            </picture>
+            <div class="gallery__wrapper">
+              <div class="gallery__box">
+                <p class="gallery__post">Дорога на север</p>
+                <span class="gallery__author">Автор фото: Пётр</span>
+              </div>
+              <span class="gallery__likes">96</span>
+            </div>
           </li>
           <li class="gallery__item">
-            <img class="gallery__photo" src="img/catalog4-mobile.jpg" width="280" height="280" alt="Мост дьявола">
-            <p class="gallery__post">Мост дьявола</p>
-            <span class="gallery__author">Автор фото: Антон</span>
-            <span class="gallery__likes">254</span>
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/catalog4-desktop.jpg 1x, img/catalog4-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/catalog4-tablet.jpg 1x, img/catalog4-tablet@2x.jpg 2x">
+              <img class="gallery__photo" src="img/catalog4-mobile.jpg" srcset="img/catalog4-mobile@2x.jpg" width="280" height="280" alt="Мост дьявола">
+            </picture>
+            <div class="gallery__wrapper">
+              <div class="gallery__box">
+                <p class="gallery__post">Мост дьявола</p>
+                <span class="gallery__author">Автор фото: Антон</span>
+              </div>
+              <span class="gallery__likes">254</span>
+            </div>
           </li>
         </ul>
       </section>
       <section class="video">
         <div class="video__intro">
           <h2 class="visually-hidden">Видеопрезентация</h2>
-          <b class="video__title gallery__title">Всё ещё сомневаетесь?</b>
-          <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+          <b class="video__title">Всё ещё сомневаетесь?</b>
+          <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они<br class="video__br"> не подорожали в очередной раз!</p>
         </div>
         <article class="video__article">
           <h3 class="visually-hidden">Видеопрезентация о Седоне</h3>
-          <img class="video__img" src="img/video-mobile.jpg" width="320" height="201" alt="Видеопрезентация о Седоне">
-          <div class="video__button-box">
-            <button class="video__button" type="button">
-              <span class="visually-hidden">Повторить видео</span>
-            </button>
-            <button class="video__button" type="button">
-              <span class="visually-hidden">Включить/выключить субтитры</span>
-            </button>
-            <button class="video__button" type="button">
-              <span class="visually-hidden">Развернуть/свернуть на полный экран</span>
-            </button>
+          <div class="video__player">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/video-desktop.jpg 1x, img/video-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x">
+            <img class="video__img" src="img/video-mobile.jpg" srcset="img/video-mobile@2x.jpg" alt="Видеопрезентация о Седоне">
+          </picture>
+          <div class="video__controls">
+            <div class="video__range-control">
+              <div class="video__range"></div>
+              <div class="video__toggle"></div>
+            </div>
+            <div class="video__buttons-control">
+              <button class="video__button-replay" type="button" title="Проиграть ещё раз">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/replay-tablet.svg">
+                  <img src="img/replay.svg" alt="Проиграть еще раз">
+                </picture>
+              </button>
+              <button class="video__button-subtitles" type="button" title="Включить субтитры">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/subtitles-tablet.svg">
+                  <img src="img/subtitles.svg" alt="Включить субтитры">
+                </picture>
+              </button>
+              <button class="video__button-full-screen" type="button" title="Развернуть во весь экран">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/fullscreen-tablet.svg">
+                  <img src="img/fullscreen.svg" alt="Развернуть во весь экран">
+                </picture>
+              </button>
+            </div>
           </div>
+        </div>
         </article>
       </section>
     </main>

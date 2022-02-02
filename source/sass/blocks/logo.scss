@@ -7,11 +7,15 @@
 
   @media ($tablet) {
     height: 0;
+    left: -52px;
   }
 }
 
 .logo__img {
-  z-index: 1;
   content: "";
   position: absolute;
+
+  @media ($tablet) {
+    z-index: 9999999;
+  }
 }

@@ -1,13 +1,17 @@
 .footer {
-  padding-top: 39px;
+  padding-top: 36px;
   padding-bottom: 25px;
   text-align: center;
 
   @media ($tablet) {
-    padding: 36px 45px;
+    padding: 29px 61px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  @media ($desktop) {
+    padding: 29px 122px;
   }
 }
 
