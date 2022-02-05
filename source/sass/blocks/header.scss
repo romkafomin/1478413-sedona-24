@@ -2,8 +2,16 @@
   text-align: center;
 }
 
+.header__nav {
+  @media ($desktop) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 .header__toggle {
-  display: block;
+  display: none;
 
   &--open {
     display: none;
@@ -31,9 +39,13 @@
   }
 
   &--close {
-    display: block;
+    display: none;
     padding: 0;
     border: 0;
+
+    @media ($tablet) {
+      display: none;
+    }
 
     &::before,
     &::after {
@@ -71,6 +83,10 @@
 
   @media ($tablet) {
     padding: 194px 0 165px;
+  }
+
+  @media ($desktop) {
+    padding: 80px 0 86px;
   }
 
   &::after {

@@ -1,5 +1,5 @@
 .logo {
-  height: 56px;
+  height: 84px;
   display: block;
   position: relative;
   right: 0;
@@ -16,6 +16,11 @@
   position: absolute;
 
   @media ($tablet) {
+    width: auto;
+    height: auto;
+    left: 55%;
+    top: 0;
+    transform: translateX(-50%);
     z-index: 9999999;
   }
 }
