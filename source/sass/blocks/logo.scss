@@ -1,26 +1,22 @@
 .logo {
   height: 84px;
-  display: block;
-  position: relative;
-  right: 0;
-  left: -46px;
+  z-index: 2;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 
   @media ($tablet) {
-    height: 0;
-    left: -52px;
+    height: auto;
+    position: absolute;
   }
 }
 
 .logo__img {
-  content: "";
-  position: absolute;
+  margin: 0 auto;
+  display: block;
 
   @media ($tablet) {
     width: auto;
     height: auto;
-    left: 55%;
-    top: 0;
-    transform: translateX(-50%);
-    z-index: 9999999;
   }
 }

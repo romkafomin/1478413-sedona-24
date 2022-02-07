@@ -1,7 +1,7 @@
 .site-list {
   position: relative;
   display: block;
-  z-index: 99999;
+  z-index: 1;
   top: 0;
   width: 100vw;
   text-align: center;
@@ -42,6 +42,10 @@
 
   &:last-child {
     border-bottom: none;
+
+    @media ($desktop) {
+      margin-right: 0;
+    }
   }
 
   @media ($tablet) {

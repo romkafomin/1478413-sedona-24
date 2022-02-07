@@ -3,9 +3,13 @@
 }
 
 .map__box {
-  @media ($desktop) {
-    width: 100%;
-    height: 350px;
-    background: url("../img/map-desktop.png");
-  }
+  width: 100%;
+  height: 350px;
+  background: url("../img/map-desktop.png");
+}
+
+.map__frame {
+  border: 0;
+  padding: 0;
+  margin: 0;
 }
