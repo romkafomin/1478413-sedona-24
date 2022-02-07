@@ -49,21 +49,13 @@
   }
 
   @media ($tablet) {
-    width: 153px;
+    width: 20%;
     padding: 0;
     border: none;
 
     &:nth-child(2) {
-      margin-right: 167px;
-
-      @media ($desktop) {
-        margin-right: 332px;
-      }
+      margin-right: 20%;
     }
-  }
-
-  @media ($desktop) {
-    margin-right: 82px;
   }
 }
 

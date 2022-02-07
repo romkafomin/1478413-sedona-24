@@ -4,6 +4,7 @@
   border-bottom: 1px solid $border-color;
 
   @media ($tablet) {
+    border-bottom: none;
     padding-bottom: 82px;
     display: flex;
     flex-direction: column;

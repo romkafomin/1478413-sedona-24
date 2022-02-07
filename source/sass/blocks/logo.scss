@@ -1,11 +1,11 @@
 .logo {
   height: 84px;
-  z-index: 2;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
 
   @media ($tablet) {
+    z-index: 2;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
     height: auto;
     position: absolute;
   }
