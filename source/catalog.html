@@ -15,7 +15,7 @@
   </head>
   <body class="page__body">
     <header class="header">
-      <a class="header__logo logo">
+      <a href="index.html" class="header__logo logo">
         <picture>
           <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
@@ -41,10 +41,12 @@
         </ul>
       </nav>
       <div class="header__intro header__second-intro">
-        <picture>
-          <source media="(min-width: 768px)" srcset="img/sedona-second-page-tablet.svg">
-          <img class="header__img" src="img/sedona-second-page.svg" alt="intro">
-        </picture>
+        <a href="#">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/sedona-second-page-tablet.svg">
+            <img class="header__img" src="img/sedona-second-page.svg" alt="intro">
+          </picture>
+        </a>
       </div>
     </header>
     <main class="main-catalog">
@@ -55,11 +57,13 @@
         </div>
         <ul class="gallery__list">
           <li class="gallery__item gallery__item--main">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/catalog1-desktop.jpg 1x, img/catalog1-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/catalog1-tablet.jpg 1x, img/catalog1-tablet@2x.jpg 2x">
-              <img class="gallery__photo gallery__photo--main" src="img/catalog1-mobile.jpg" srcset="img/catalog1-mobile@2x.jpg" width="280" height="280" alt="Неродные просторы">
-            </picture>
+            <a href="#">
+              <picture class="gallery__pic">
+                <source media="(min-width: 1200px)" srcset="img/catalog1-desktop.jpg 1x, img/catalog1-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/catalog1-tablet.jpg 1x, img/catalog1-tablet@2x.jpg 2x">
+                <img class="gallery__photo gallery__photo--main" src="img/catalog1-mobile.jpg" srcset="img/catalog1-mobile@2x.jpg" width="280" height="280" alt="Неродные просторы">
+              </picture>
+            </a>
             <div class="gallery__wrapper">
               <div class="gallery__box">
                 <p class="gallery__post">Неродные просторы</p>
@@ -69,11 +73,13 @@
             </div>
           </li>
           <li class="gallery__item">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/catalog2-desktop.jpg 1x, img/catalog2-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/catalog2-tablet.jpg 1x, img/catalog2-tablet@2x.jpg 2x">
-              <img class="gallery__photo" src="img/catalog2-mobile.jpg" srcset="img/catalog2-mobile@2x.jpg" width="280" height="280" alt="Местная растительность">
-            </picture>
+            <a href="#">
+              <picture class="gallery__pic">
+                <source media="(min-width: 1200px)" srcset="img/catalog2-desktop.jpg 1x, img/catalog2-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/catalog2-tablet.jpg 1x, img/catalog2-tablet@2x.jpg 2x">
+                <img class="gallery__photo" src="img/catalog2-mobile.jpg" srcset="img/catalog2-mobile@2x.jpg" width="280" height="280" alt="Местная растительность">
+              </picture>
+            </a>
             <div class="gallery__wrapper">
               <div class="gallery__box">
                 <p class="gallery__post">Местная растительность</p>
@@ -82,13 +88,15 @@
               <span class="gallery__likes">143</span>
             </div>
           </li>
-          <li class="gallery__item">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/catalog3-desktop.jpg 1x, img/catalog3-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/catalog3-tablet.jpg 1x, img/catalog3-tablet@2x.jpg 2x">
-              <img class="gallery__photo" src="img/catalog3-mobile.jpg" srcset="img/catalog3-mobile@2x.jpg" width="280" height="280" alt="Дорога на север">
-            </picture>
-            <div class="gallery__wrapper">
+          <li class="gallery__item gallery__item--third">
+            <a href="#">
+              <picture class="gallery__pic">
+                <source media="(min-width: 1200px)" srcset="img/catalog3-desktop.jpg 1x, img/catalog3-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/catalog3-tablet.jpg 1x, img/catalog3-tablet@2x.jpg 2x">
+                <img class="gallery__photo" src="img/catalog3-mobile.jpg" srcset="img/catalog3-mobile@2x.jpg" width="280" height="280" alt="Дорога на север">
+              </picture>
+            </a>
+            <div class="gallery__wrapper gallery__wrapper">
               <div class="gallery__box">
                 <p class="gallery__post">Дорога на север</p>
                 <span class="gallery__author">Автор фото: Пётр</span>
@@ -97,11 +105,13 @@
             </div>
           </li>
           <li class="gallery__item">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/catalog4-desktop.jpg 1x, img/catalog4-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/catalog4-tablet.jpg 1x, img/catalog4-tablet@2x.jpg 2x">
-              <img class="gallery__photo" src="img/catalog4-mobile.jpg" srcset="img/catalog4-mobile@2x.jpg" width="280" height="280" alt="Мост дьявола">
-            </picture>
+            <a href="#">
+              <picture class="gallery__pic">
+                <source media="(min-width: 1200px)" srcset="img/catalog4-desktop.jpg 1x, img/catalog4-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/catalog4-tablet.jpg 1x, img/catalog4-tablet@2x.jpg 2x">
+                <img class="gallery__photo" src="img/catalog4-mobile.jpg" srcset="img/catalog4-mobile@2x.jpg" width="280" height="280" alt="Мост дьявола">
+              </picture>
+            </a>
             <div class="gallery__wrapper">
               <div class="gallery__box">
                 <p class="gallery__post">Мост дьявола</p>
@@ -121,11 +131,13 @@
         <article class="video__article">
           <h3 class="visually-hidden">Видеопрезентация о Седоне</h3>
           <div class="video__player">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/video-desktop.jpg 1x, img/video-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x">
-            <img class="video__img" src="img/video-mobile.jpg" srcset="img/video-mobile@2x.jpg" alt="Видеопрезентация о Седоне">
-          </picture>
+            <a href="#">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/video-desktop.jpg 1x, img/video-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x">
+                <img class="video__img" src="img/video-mobile.jpg" srcset="img/video-mobile@2x.jpg" alt="Видеопрезентация о Седоне">
+              </picture>
+            </a>
           <div class="video__controls">
             <div class="video__range-control">
               <div class="video__range"></div>

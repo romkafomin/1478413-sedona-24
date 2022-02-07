@@ -71,7 +71,7 @@
 
   @media ($tablet) {
     align-items: flex-start;
-    width: 324px;
+    width: 33.33%;
     background: $form-color;
     padding: 0;
   }
@@ -83,6 +83,10 @@
 
   &--main {
     width: 100%;
+
+    @media ($tablet) {
+      align-items: stretch;
+    }
   }
 }
 
@@ -148,6 +152,10 @@
     margin-top: 21px;
     margin-right: 32px;
   }
+}
+
+.gallery__pic {
+  width: 100%;
 }
 
 .gallery__photo {

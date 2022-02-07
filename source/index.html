@@ -14,7 +14,7 @@
   </head>
   <body class="page__body">
     <header class="header">
-      <a class="header__logo logo">
+      <a href="#" class="header__logo logo">
         <picture>
           <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
@@ -40,10 +40,12 @@
         </ul>
       </nav>
       <div class="header__intro">
-        <picture>
-          <source media="(min-width: 768px)" srcset="img/text-index-tablet.svg">
-          <img class="header__img" src="img/text-index.svg" alt="intro">
-        </picture>
+        <a href="#">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/text-index-tablet.svg">
+            <img class="header__img" src="img/text-index.svg" alt="intro">
+          </picture>
+        </a>
       </div>
     </header>
     <main class="main">
@@ -61,11 +63,13 @@
                 <p class="advantages__number">— №1 —</p>
                 <p class="advantages__text advantages__text--first">Седона не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
-              <picture>
-                <source media="(min-width: 1200px)" srcset="img/advantages1-desktop.jpg 1x, img/advantages1-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/advantages1-tablet.jpg 1x, img/advantages1-tablet@2x.jpg 2x">
-                <img class="advantages__img" src="img/advantages1.jpg" srcset="img/advantages1@2x.jpg 2x" width="320" height="260" alt="Настоящий городок - Седона">
-              </picture>
+              <a href="#">
+                  <picture class="advantages__img-width">
+                    <source media="(min-width: 1200px)" srcset="img/advantages1-desktop.jpg 1x, img/advantages1-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/advantages1-tablet.jpg 1x, img/advantages1-tablet@2x.jpg 2x">
+                    <img class="advantages__img" src="img/advantages1.jpg" srcset="img/advantages1@2x.jpg 2x" width="320" height="260" alt="Настоящий городок - Седона">
+                  </picture>
+              </a>
             </div>
             <ul class="advantages__features features">
               <li class="features__item features__item--housing">
@@ -95,11 +99,13 @@
                 <p class="advantages__number">— №2 —</p>
                 <p class="advantages__text advantages__text--second">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
               </div>
-              <picture class="advantages__picture">
-                <source media="(min-width: 1200px)" srcset="img/advantages2-desktop.jpg 1x, img/advantages2-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/advantages2-tablet.jpg 1x, img/advantages2-tablet@2x.jpg 2x">
-                <img class="advantages__img" src="img/advantages2.jpg" srcset="img/advantages2@2x.jpg" width="320" height="260" alt="Фото моста">
-              </picture>
+              <a href="#">
+                <picture class="advantages__picture advantages__img-width">
+                  <source media="(min-width: 1200px)" srcset="img/advantages2-desktop.jpg 1x, img/advantages2-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/advantages2-tablet.jpg 1x, img/advantages2-tablet@2x.jpg 2x">
+                  <img class="advantages__img" src="img/advantages2.jpg" srcset="img/advantages2@2x.jpg" width="320" height="260" alt="Фото моста">
+                </picture>
+              </a>
             </div>
           </li>
             <li class="advantages__item advantages__item--additional">

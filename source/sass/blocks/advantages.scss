@@ -82,7 +82,7 @@
       flex-direction: column;
       justify-content: flex-start;
       align-items: center;
-      width: 256px;
+      width: 33.33%;
       height: 256px;
     }
 
@@ -102,9 +102,7 @@
   &--second {
     @media ($tablet) {
       padding-top: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      display: block;
     }
   }
 }
@@ -131,7 +129,7 @@
 
   @media ($tablet) {
     box-sizing: border-box;
-    width: 256px;
+    width: 33.33%;
   }
 
   @media ($desktop) {
@@ -238,12 +236,17 @@
   }
 }
 
+.advantages__img-width {
+  @media ($tablet) {
+    width: 66.66%;
+  }
+}
+
 .advantages__img {
   display: block;
   width: 100%;
 
   @media ($tablet) {
-    width: 512px;
     height: 256px;
   }
 
